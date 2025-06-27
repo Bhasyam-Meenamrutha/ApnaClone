@@ -1,0 +1,20 @@
+.interview-content {
+  padding: 60px 0;
+  background: #f8fafc;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+@media (max-width: 768px) {
+  .interview-content {
+    padding: 40px 0;
+  }
+  
+  .content-wrapper {
+    gap: 32px;
+  }
+}

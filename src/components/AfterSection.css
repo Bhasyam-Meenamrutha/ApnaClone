@@ -1,0 +1,130 @@
+.after-section {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #faf5ff 100%);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-list {
+  margin: 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.benefit-item::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+  border-radius: 50%;
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+.benefit-content {
+  flex: 1;
+}
+
+.benefit-text {
+  font-size: 16px;
+  color: #1f2937;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.privacy-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 12px;
+  margin: 32px 0 24px 0;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.privacy-icon {
+  color: #059669;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.privacy-text {
+  color: #1f2937;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.ai-disclaimer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+}
+
+.ai-badge {
+  background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 28px;
+}
+
+.ai-text {
+  font-family: 'SF Pro Display', -apple-system, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.disclaimer-text {
+  color: #8b5cf6;
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .after-section {
+    padding: 24px;
+  }
+  
+  .benefits-list {
+    margin: 24px 0;
+    gap: 16px;
+  }
+  
+  .benefit-text {
+    font-size: 15px;
+  }
+  
+  .privacy-notice {
+    padding: 16px;
+    margin: 24px 0 20px 0;
+  }
+  
+  .privacy-text {
+    font-size: 14px;
+  }
+  
+  .ai-disclaimer {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+  
+  .disclaimer-text {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,290 @@
+.footer {
+  background: #1f2937;
+  color: white;
+  padding: 48px 0 32px 0;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 48px;
+  align-items: start;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer-logo .logo-text {
+  font-size: 32px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.social-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.social-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+}
+
+.social-link {
+  width: 48px;
+  height: 48px;
+  background: #374151;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d1d5db;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.social-link:hover {
+  background: #4b5563;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.copyright {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.legal-links {
+  display: flex;
+  gap: 24px;
+}
+
+.legal-link {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.legal-link:hover {
+  color: white;
+}
+
+.footer-right {
+  background: white;
+  color: #1f2937;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.app-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.app-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.app-subtitle {
+  color: #6b7280;
+  font-size: 16px;
+  margin: 0;
+}
+
+.app-download {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.download-button {
+  flex: 1;
+}
+
+.play-store-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #000;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.play-store-btn:hover {
+  background: #1a1a1a;
+  transform: translateY(-1px);
+}
+
+.play-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.store-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.get-it {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+}
+
+.store-name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.qr-code {
+  width: 120px;
+  height: 120px;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.qr-pattern {
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+.qr-squares {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 1px;
+  width: 100%;
+  height: 100%;
+}
+
+.qr-square {
+  background: transparent;
+  border-radius: 1px;
+}
+
+.qr-square.filled {
+  background: #000;
+}
+
+/* Create a more realistic QR code pattern */
+.qr-squares .qr-square:nth-child(1),
+.qr-squares .qr-square:nth-child(2),
+.qr-squares .qr-square:nth-child(3),
+.qr-squares .qr-square:nth-child(4),
+.qr-squares .qr-square:nth-child(5),
+.qr-squares .qr-square:nth-child(6),
+.qr-squares .qr-square:nth-child(7),
+.qr-squares .qr-square:nth-child(13),
+.qr-squares .qr-square:nth-child(19),
+.qr-squares .qr-square:nth-child(25),
+.qr-squares .qr-square:nth-child(31),
+.qr-squares .qr-square:nth-child(37),
+.qr-squares .qr-square:nth-child(43),
+.qr-squares .qr-square:nth-child(49),
+.qr-squares .qr-square:nth-child(55),
+.qr-squares .qr-square:nth-child(61),
+.qr-squares .qr-square:nth-child(67),
+.qr-squares .qr-square:nth-child(73),
+.qr-squares .qr-square:nth-child(79),
+.qr-squares .qr-square:nth-child(85),
+.qr-squares .qr-square:nth-child(91),
+.qr-squares .qr-square:nth-child(97),
+.qr-squares .qr-square:nth-child(103),
+.qr-squares .qr-square:nth-child(109),
+.qr-squares .qr-square:nth-child(115),
+.qr-squares .qr-square:nth-child(121),
+.qr-squares .qr-square:nth-child(127),
+.qr-squares .qr-square:nth-child(133),
+.qr-squares .qr-square:nth-child(139) {
+  background: #000;
+}
+
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .footer-right {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 32px 0 24px 0;
+  }
+  
+  .footer-left {
+    gap: 24px;
+  }
+  
+  .footer-right {
+    padding: 24px;
+  }
+  
+  .app-download {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+  
+  .qr-code {
+    align-self: center;
+  }
+  
+  .social-links {
+    flex-wrap: wrap;
+  }
+  
+  .legal-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .social-links {
+    justify-content: center;
+  }
+  
+  .footer-links {
+    text-align: center;
+  }
+}
